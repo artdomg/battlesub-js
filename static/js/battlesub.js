@@ -109,7 +109,7 @@ var tick = function() {};
 		ctx.fillStyle = '#050';
 		ctx.fill();
 
-		ctx.translate(info.x, info.y);
+		ctx.translate(info.x + 25, info.y + 25);
 		ctx.rotate(Math.PI / 180 * info.rotation);
 		ctx.drawImage(subImg , -25, -25);
 		ctx.setTransform(1, 0, 0, 1, 0, 0);
