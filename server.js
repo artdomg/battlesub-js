@@ -7,7 +7,8 @@ module.exports = function(server) {
 	io.on('connection', setEvents);
 
 	function setEvents(socket) {
-		socket.on('disconnect', game.disconnected);
+		socket.on('disconnect', () => game.disconnected(socket));
 		socket.on('queue', () => game.queue(socket));
+		socket.on('update', (data) => game.update(socket, data));
 	}
 };
