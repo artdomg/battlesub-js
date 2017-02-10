@@ -16,7 +16,7 @@ var tick = function() {};
 		'\t\t\tMax rotation: +-5',
 		'\t\tsubmarine.getInfo()',
 		'\t\t\tReturns: { x, y, rotation, energy, minX, minY,',
-		'\t\t\t\tmaxX, maxY, maxEnergy }',
+		'\t\t\t\tmaxX, maxY, maxEnergy, collision }',
 		'\t\tsubmarine.sonar()',
 		'\t\t\tReturns the result under submarine.sonarResults',
 		'\t*/',
