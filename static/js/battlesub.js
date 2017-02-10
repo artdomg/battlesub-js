@@ -18,7 +18,7 @@ var tick = function() {};
 		'\t\t\tReturns: { x, y, rotation, energy, minX, minY,',
 		'\t\t\t\tmaxX, maxY, maxEnergy, collision }',
 		'\t\tsubmarine.sonar()',
-		'\t\t\tReturns: { distanceToEnemy }',
+		'\t\t\tReturns: { distanceToEnemy, incline }',
 		'\t*/',
 		'\t',
 		'\t',
