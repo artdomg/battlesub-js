@@ -1,7 +1,7 @@
 var submarineFactory = function(sock, px, py) {
 	var x = px, y = py, deg = 0, socket = sock, speed = 5,
 		lastMovement = new Date().getTime(), lastRotation = new Date().getTime(),
-		maxX = 550, maxY = 350, maxEnergy = 2000, energy, collision = false;
+		maxX = 550, maxY = 350, maxEnergy = 1500, energy, collision = false;
 
 	energy = maxEnergy;
 
@@ -15,9 +15,9 @@ var submarineFactory = function(sock, px, py) {
 
 				collision = false;
 				if(checkPosition()) {
-					energy--;
 					collision = true;
 				}
+				else energy--;
 			}
 		},
 		moveBackwards: function() {
@@ -29,9 +29,9 @@ var submarineFactory = function(sock, px, py) {
 
 				collision = false;
 				if(checkPosition()) {
-					energy--;
 					collision = true;
 				}
+				else energy--;
 			}
 		},
 		rotate: function(degrees) {
@@ -41,6 +41,7 @@ var submarineFactory = function(sock, px, py) {
 				deg += degrees;
 
 				lastRotation = new Date().getTime();
+				energy--;
 			}
 		},
 		getInfo: function() {
