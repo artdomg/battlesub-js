@@ -1,0 +1,30 @@
+{
+  "name": "battlesub-js",
+  "description": "A submarine battle coding game",
+  "main": "index.js",
+  "authors": [
+    "Arturo Dominguez Garcia"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "socketio",
+    "submarine",
+    "battle",
+    "coding",
+    "game"
+  ],
+  "homepage": "https://github.com/artdomg/battlesub-js",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ace-builds": "~1.2.6",
+    "jquery": "~3.1.1",
+    "bootstrap": "~3.3.7"
+  }
+}

@@ -1,0 +1,29 @@
+doctype html
+
+html
+	head
+		title= 'Battlesub JS'
+		meta(charset='UTF-8')
+		link(rel="stylesheet" type="text/css" href="/static/css/styles.css")
+		link(rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/dist/css/bootstrap.css")
+		script(src='/static/vendor/jquery/dist/jquery.min.js')
+	body
+		#title= 'Battlesub JS'
+
+		#game-container
+			#editor-container
+				#editor
+			#canvas-container
+				#statusBar
+					button#playBtn.btn.btn-primary='Save code and play'
+					span#statusText
+				canvas#canvas(width=600, height=400)
+
+		#assets
+			img#subImg(src='/static/img/sub.png')
+
+
+		script(src='/socket.io/socket.io.js')
+		script(src='/static/vendor/ace-builds/src-noconflict/ace.js')
+		script(src='/static/js/submarineFactory.js')
+		script(src='/static/js/battlesub.js')

@@ -1,0 +1,59 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#title {
+	color: #FFF;
+	background-color: #222;
+	margin: 0;
+	line-height: 70px;
+	padding: 0px 20px 0px 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#game-container {
+	background-color: #000;
+}
+
+#editor-container {
+	position: relative;
+	float: left;
+	width: 40%;
+}
+
+#statusBar {
+	padding: 0px 10px 0px 10px;
+	line-height: 50px;
+	background-color: #222;
+	color: #FFF;
+}
+
+button.btn {
+	margin-right: 14px;
+}
+
+#canvas-container {
+	position: relative;
+	float: left;
+	width: 60%;
+	background-color: #000;
+}
+
+#canvas {
+	background-color: #103669;
+}
+
+#assets {
+	display: none;
+}
+
+#editor {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
