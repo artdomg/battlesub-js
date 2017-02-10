@@ -38,6 +38,7 @@ var tick = function() {};
 	$(document).ready(function() {
 		windowHeight = $(window).height();
 		$statusBar = $('#statusText');
+
 		resize();
 
 		bindEvents();
@@ -110,7 +111,7 @@ var tick = function() {};
 
 		if(!isPlaying) {
 			socket.emit('queue');
-			setStatus('In queue...');
+			setStatus('Finding match...');
 		}
 	}
 
