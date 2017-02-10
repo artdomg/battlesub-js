@@ -13,7 +13,7 @@ var tick = function() {};
 		'\t\tsubmarine.moveForward()',
 		'\t\tsubmarine.moveBackwards()',
 		'\t\tsubmarine.rotate(degrees)',
-		'\t\t\tMax rotation: +-15',
+		'\t\t\tMax rotation: +-5',
 		'\t\tsubmarine.getInfo()',
 		'\t\t\tReturns: { x, y, rotation, energy, minX, minY,',
 		'\t\t\t\tmaxX, maxY, maxEnergy }',
