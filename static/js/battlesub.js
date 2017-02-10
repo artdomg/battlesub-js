@@ -39,7 +39,7 @@ var tick = function() {};
 	}
 
 	function initSocketIO() {
-		socket = io('//localhost:' + port);
+		socket = io('//localhost' + location.port ? ':' + location.port : '');
 	}
 
 	function play() {

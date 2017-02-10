@@ -9,7 +9,7 @@ app.set('view engine', 'pug');
 app.use('/static', express.static('static'));
 
 app.get('/', function (req, res) {
-	res.render('index', { port: port });
+	res.render('index');
 });
 
 var server = app.listen(port, function () {
